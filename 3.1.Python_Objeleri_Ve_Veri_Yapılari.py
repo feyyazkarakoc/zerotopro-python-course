@@ -186,13 +186,22 @@ print(type(isOnline)) # <class 'int'>
 
 Daire Alanı : r2
 Daire Çevresi : 2лr
-* Yarı çapı verilen bir dairenin alan ve çevresini hesaplayınız. (л : 3.14)
+Yarı çapı verilen bir dairenin alan ve çevresini hesaplayınız. (л : 3.14)
 """
 r = float(input("Yarı çapı giriniz: ")) 
 л = 3.14
 cevre = 2 * л * r
-alan = л * r ** 2
+alan = л * (r ** 2)
 
 print(f"Dairenin çevresi : {cevre:.2f}\nDairenin alanı : {alan:.2f}")
+
+print("Çevre : " + cevre + "Alan : " + alan) # TypeError: can only concatenate str (not "float") to str
+# Doğru kullanım
+print("Çevre : " + str(cevre) + " Alan : " + str(alan)) # Çevre : 18.84 Alan : 28.26
+
+
+
+
+
 
 

@@ -86,4 +86,40 @@ index() → Bulamazsa ValueError hatası verir.
 message = 'Hello There. My name is Sadık Turan'
 print(message.find("Sadık")) # 24
 print(message.index("S")) # 24
-print(message.find("Sadıkx")) # -1
+print(message.find("Sadıkx")) # -1 # Aranılan kelime yoksa -1 döner
+
+"""
+str.startswith(prefix[, start[, end]]) -> bool
+prefix → Başta olup olmadığını kontrol etmek istediğin ifade (string, tuple of strings olabilir).
+start → (Opsiyonel) Aramaya başlanacak indeks.
+end → (Opsiyonel) Aramanın biteceği indeks (son dahil değil).
+
+True → Eğer string belirtilen ifade ile başlıyorsa
+False → Aksi halde
+"""
+
+message = 'Hello There. My name is Sadık Turan'
+isFound = message.startswith("H")
+print(isFound) # True
+
+isFound = message.startswith("B")
+print(isFound) # False
+
+isFound = message.endswith("n")
+print(isFound) # True
+
+"""
+str.replace(old, new, count=-1)
+old → Değiştirilecek alt string.
+new → Yerine konacak alt string.
+count (opsiyonel) → En fazla kaç tane değişiklik yapılacağını belirtir. Varsayılanı -1, yani hepsini değiştir.
+
+Yeni bir string döner. (Orijinal string değişmez, çünkü string'ler immutable’dır.)
+"""
+
+message = 'Hello There. My name is Sadık Turan'
+message = message.replace("Sadık", "Feyyaz")
+print(message) # Hello There. My name is Feyyaz Turan
+message = message.replace("ç", "c").replace("ö", "o").replace(" ", "-")
+print(message) # Hello-There.-My-name-is-Feyyaz-Turan
+

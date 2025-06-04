@@ -123,3 +123,51 @@ print(message) # Hello There. My name is Feyyaz Turan
 message = message.replace("ç", "c").replace("ö", "o").replace(" ", "-")
 print(message) # Hello-There.-My-name-is-Feyyaz-Turan
 
+""""
+center() metodu, bir string’i belirtilen genişliğe ortalamak için kullanılır. Ortalamayı yaparken,
+iki yana belirli bir karakter (varsayılan olarak boşluk " ") ekler.
+
+str.center(width, fillchar=' ')
+width → Ortalanmış string’in toplam uzunluğu (yani hedef genişlik).
+fillchar → (Opsiyonel) Kenarlara eklenecek karakter. Varsayılan " " (boşluk).
+
+Ortalanmış ve kenarları doldurulmuş yeni bir string.
+"""
+message = 'Hello There. My name is Sadık Turan'
+message = message.center(50)
+print(message) #        Hello There. My name is Sadık Turan        
+
+print(message.center(60,"*")) # *****       Hello There. My name is Sadık Turan        *****
+
+
+"""
+ljust() ve rjust() string metodları, bir stringi belirli bir uzunlukta hizalamak için kullanılır:
+
+ljust(width, fillchar=' ')
+Sol hizalama (left-justify) yapar:
+Metni sola yaslar, sağ tarafı fillchar (varsayılan olarak boşluk ' ') ile doldurur.
+text = "Hello"
+print(text.ljust(10))         # 'Hello     '
+print(text.ljust(10, '-'))    # 'Hello-----'
+
+rjust(width, fillchar=' ')
+Sağ hizalama (right-justify) yapar:
+Metni sağa yaslar, sol tarafı fillchar ile doldurur.
+
+text = "Hello"
+print(text.rjust(10))         # '     Hello'
+print(text.rjust(10, '-'))    # '-----Hello'
+Notlar:
+Eğer width değeri, stringin uzunluğundan küçük veya eşitse, orijinal string aynen döner.
+
+fillchar sadece tek bir karakter olabilir. Birden fazla karakter verirsen hata alırsın.
+
+"""
+
+message = 'Hello There. My name is Sadık Turan'
+result = message.ljust(60, "-")
+print(result) # Hello There. My name is Sadık Turan-------------------------
+
+message = 'Hello There. My name is Sadık Turan'
+result = message.rjust(60, "-")
+print(result) # -------------------------Hello There. My name is Sadık Turan

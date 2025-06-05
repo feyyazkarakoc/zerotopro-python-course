@@ -104,4 +104,25 @@ print(result) # True
 result = "Contents".center(50, "*")
 print(result) # *********************Contents*********************
 
-# 9- 'course' karakter dizisindeki tüm boşluk karakterlerini '-' ile değiştirin.
+# 9- course karakter dizisindeki tüm boşluk karakterlerini '-' ile değiştirin.
+
+result = course.replace(" ", "-")
+print(result)
+
+result = course.replace(" ", "-", 5)
+print(result)
+
+result = course.replace(" ","")
+print(result) # PythonKursu:BaştanSonaPythonProgramlamaRehberiniz(40saat)
+
+
+# 10- 'Hello World' karakter dizisinin 'World' ifadesini 'There' olarak değiştirin
+
+result = 'Hello World'.replace("World", "There")
+print(result) # Hello There
+
+
+# 11- course karakter dizisini boşluk karakterlerinden ayırın.
+
+result = course.split()
+print(result) # ['Python', 'Kursu:', 'Baştan', 'Sona', 'Python', 'Programlama', 'Rehberiniz', '(40', 'saat)']

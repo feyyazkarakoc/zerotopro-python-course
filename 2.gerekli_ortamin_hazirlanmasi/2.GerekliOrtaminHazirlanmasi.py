@@ -25,7 +25,6 @@ veya
 mkdir 'SIFIRDAN ILER SEVIYE PYTHON'
 PowerShell'de boşluk karakteri, birden fazla argümanı ayırmak için kullanılır.
 mkdir SIFIRDAN ILER SEVIYE PYTHON komutu, mkdir komutuna 4 farklı parametre vermiş gibi algılanır. Ancak mkdir bu kadar parametre beklemez.
-Bu şekilde düzeltirsen hata çözülür. Yardımcı olmamı ister misin başka bir konuda?
 """
 
 """
@@ -54,16 +53,13 @@ PowerShell'de /d gerekmez, sadece cd D:\Yol\AltKlasör yeterlidir.
 """
 Terminalde (PowerShell) bulunduğun konumu değiştirmek için cd (change directory) komutunu kullanırsın.
 cd — Change Directory
-Açılımı: Change Directory
 Amacı: Klasör (dizin) değiştirmek.
 
 dir — Directory
-Açılımı: Directory
 Amacı: Bulunduğun klasördeki tüm dosya ve klasörleri listelemek.
 
 mkdir — Make Directory
-Açılımı: Make Directory
- Anlamı: Yeni bir klasör (dizin) oluşturmak için kullanılır.
+Anlamı: Yeni bir klasör (dizin) oluşturmak için kullanılır.
 
 """
 

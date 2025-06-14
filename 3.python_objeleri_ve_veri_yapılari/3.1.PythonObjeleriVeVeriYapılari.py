@@ -47,7 +47,7 @@ print(maasAhmet - (maasAhmet * vergi)) # 3650.0
 print(maasAli - (maasAli * vergi)) # 2920.0
 
 # Değişken tanımlama kuralları
-# rakam iile başlayamaz
+# rakam ile başlayamaz
 # Değişken tanımladığımızda değerini atamak zorundayız
 
 number1 = 10
@@ -162,7 +162,7 @@ print(y) # 2
 print(type(y)) # <class 'int'>
 
 result = x + y
-print(result) # 7.0 #!!!
+print(result) # 7.0 #!!!DİKKAT
 print(type(result)) # <class 'float'>
 
 # int/float to str

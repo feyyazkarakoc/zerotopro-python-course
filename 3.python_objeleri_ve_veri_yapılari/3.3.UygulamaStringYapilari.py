@@ -44,7 +44,8 @@ print(course[0 : 15] + " " + course[-15 :])
 
 #5- 'course' ifadesindeki karakterleri tersten yazdırın.
 
-print(course[::]) # Python Kursu: Baştan Sona Python Programlama Rehberiniz (40 saat)
+print(course[: : ]) # Python Kursu: Baştan Sona Python Programlama Rehberiniz (40 saat)
+print(course[: : 1]) # Python Kursu: Baştan Sona Python Programlama Rehberiniz (40 saat)
 print(course[: : -1]) # )taas 04( zinirebheR amalmargorP nohtyP anoS natşaB :usruK nohtyP
 
 s = "12345" * 5

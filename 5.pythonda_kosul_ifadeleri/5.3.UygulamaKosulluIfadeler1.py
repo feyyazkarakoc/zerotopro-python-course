@@ -4,6 +4,14 @@
 # durumunu kontrol ediniz. Ehliyet alma koşulu en az 18 ve eğitim durumu 
 # lise ya da üniversite olmalıdır.
 
+isim = input("isminiz : ")
+yas = input("yaşınız : ")
+egitim = input("eğitim : ")
+
+result = (yas >= 18) and (egitim == "lise" or  egitim == "üniversite")
+
+
+
 # 2- Bir öğrencinin 2 yazılı bir sözlü notunu alıp hesaplanan ortalamaya göre 
 # not aralığına karşılık gelen not bilgisini yazdırınız.
 # 0 -24 => 0
